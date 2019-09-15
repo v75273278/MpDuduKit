@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "ZJKitTool"
-  s.version      = "2.4.7"
-  s.summary      = "ZJKitTool是一个对UIK封装的框架与各种工具的集合,还有各种自定义View等等"
+  s.name         = "MPKitTool"
+  s.version      = "1.8.8"
+  s.summary      = "MPKitTool是一个对UIK封装的框架与各种工具的集合,还有各种自定义View等等"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Dzhijian/ZJKitTool.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/v75273278/MpDuduKit.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
