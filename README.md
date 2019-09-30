@@ -1,4 +1,4 @@
-# ZJKitTool
+# MPKitTool
 
 ## Statement
 
@@ -35,7 +35,7 @@ MVVM模式设计的图文混排评论列表，简单可随意更改的筛选视�
 > 快速创建一个按钮,赋给实例的按钮,并实现点击事件：
 
 ```Objc
-  self.btn = [UIButton  mp_buttonWithTitle:@"评论列表"
+  self.btn = [UIButton  zj_buttonWithTitle:@"评论列表"
                                   titleColor:kWhiteColor
                                    backColor:kOrangeColor
                                     fontSize:16 isBold:YES
@@ -153,7 +153,7 @@ MVVM模式设计的图文混排评论列表，简单可随意更改的筛选视�
 | ![](https://github.com/Dzhijian/ZJKitTool/blob/master/img-folder/datePickerView.jpg?raw=true) | ![](https://github.com/Dzhijian/ZJKitTool/blob/master/img-folder/normalPickerView.jpg?raw=true)|
  
 ## License
-ZJKitTool is released under the MIT license. See LICENSE for details.
+MPKitTool is released under the MIT license. See LICENSE for details.
 
 
   
