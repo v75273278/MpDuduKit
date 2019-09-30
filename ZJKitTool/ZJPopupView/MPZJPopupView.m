@@ -1,21 +1,21 @@
 //
-//  ZJPopupView.m
+//  MPZJPopupView.m
 //  ZJKitTool
 //
 //  Created by James on 2018/11/13.
 //  Copyright © 2018 kapokcloud. All rights reserved.
 //
 
-#import "ZJPopupView.h"
+#import "MPZJPopupView.h"
 
 #define ZJ_STATUSBAR_HEIGHT ([UIApplication sharedApplication].statusBarFrame.size.height)
 #define KIS_iPhoneX ((ZJ_STATUSBAR_HEIGHT == 44) ? YES : NO)
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
 
-@interface ZJPopupView()
+@interface MPZJPopupView()
 @property (nonatomic, assign) ZJPopupAnimationStyle style;
-@property (nonatomic, strong) ZJBasePopupView *showView;
+@property (nonatomic, strong) MPZJBasePopupView *showView;
 @property (nonatomic, assign) BOOL isBGClickAction;
 //@property (nonatomic, assign) double durationTime;
 @property (nonatomic, assign) CGFloat bgAlpha;
@@ -24,12 +24,12 @@
 @property (nonatomic, assign) BOOL isShowComplete;
 @end
 
-@implementation ZJPopupView
+@implementation MPZJPopupView
 
 
 
 #pragma mark - 初始化视图
-+(instancetype)zj_showPopView:(ZJBasePopupView *)showView
++(instancetype)zj_showPopView:(MPZJBasePopupView *)showView
                      viewSize:(CGSize)size
                      delegate:(id<ZJPopupViewDelegate>)delegate
                  durationTime:(double)durationTime
@@ -49,7 +49,7 @@
                        closeBtn:nil];
 }
 
-+(instancetype)zj_showPopView:(ZJBasePopupView *)showView
++(instancetype)zj_showPopView:(MPZJBasePopupView *)showView
                     superView:(UIView *)superView
                      viewSize:(CGSize)size
                      delegate:(id<ZJPopupViewDelegate>)delegate
@@ -60,7 +60,7 @@
                    animaStyle:(ZJPopupAnimationStyle)animaStyle
                      closeBtn:( UIButton * _Nullable )closeBtn{
     
-    ZJPopupView *popViw =  [[self alloc]initWithShowView:showView
+    MPZJPopupView *popViw =  [[self alloc]initWithShowView:showView
                                                superView:superView
                                                 viewSize:size
                                                 delegate:delegate
@@ -77,7 +77,7 @@
 
 
 
--(instancetype)initWithShowView:(ZJBasePopupView *)showView
+-(instancetype)initWithShowView:(MPZJBasePopupView *)showView
                       superView:(UIView *)superView
                        viewSize:(CGSize)size
                        delegate:(id<ZJPopupViewDelegate>)delegate
@@ -118,7 +118,7 @@
         self.hidden = YES;
         self.backgroundColor = [UIColor colorWithRed:33/255.0 green:33/255.0 blue:33/255.0 alpha:self.bgAlpha];
         if (showView != nil) {
-            NSAssert([showView isKindOfClass:[ZJBasePopupView class]], @"showView 必须继承 ZJBasePopupView");
+            NSAssert([showView isKindOfClass:[MPZJBasePopupView class]], @"showView 必须继承 MPZJBasePopupView");
             self.showView = showView;
             self.showView.frame = CGRectMake((self.frame.size.width - size.width)/2, (self.frame.size.height - size.height)/2, size.width, size.height);
             [self addSubview:self.showView];
@@ -140,10 +140,10 @@
     return self;
 }
 
-+(instancetype)zj_showWithPopupView:(ZJBasePopupView *)popupView{
++(instancetype)zj_showWithPopupView:(MPZJBasePopupView *)popupView{
     
    
-    ZJPopupView *popView = [[ZJPopupView alloc]init];
+    MPZJPopupView *popView = [[MPZJPopupView alloc]init];
     
     return popView;
 }
@@ -167,7 +167,7 @@
 }
 
 #pragma mark - Setter
--(void)setPopupView:(ZJBasePopupView *)popupView{
+-(void)setPopupView:(MPZJBasePopupView *)popupView{
     _popupView = popupView;
 }
 

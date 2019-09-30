@@ -1,5 +1,5 @@
 //
-//  ZJBasePopupView.h
+//  MPZJBasePopupView.h
 //  ZJKitTool
 //
 //  Created by James on 2018/11/13.
@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^ShowViewActionBlock)(void);
 
-@interface ZJBasePopupView : UIView
+@interface MPZJBasePopupView : UIView
 
 @property (nonatomic, copy) ShowViewActionBlock baseBlock;
 

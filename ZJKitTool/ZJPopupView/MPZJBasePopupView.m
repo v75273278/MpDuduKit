@@ -1,14 +1,14 @@
 //
-//  ZJBasePopupView.m
+//  MPZJBasePopupView.m
 //  ZJKitTool
 //
 //  Created by James on 2018/11/13.
 //  Copyright © 2018 kapokcloud. All rights reserved.
 //
 
-#import "ZJBasePopupView.h"
+#import "MPZJBasePopupView.h"
 
-@implementation ZJBasePopupView
+@implementation MPZJBasePopupView
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {

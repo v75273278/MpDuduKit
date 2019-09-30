@@ -9,7 +9,7 @@
 #ifndef ZJPopupViewMacros_h
 #define ZJPopupViewMacros_h
 
-#import "ZJBasePopupView.h"
-#import "ZJPopupView.h"
+#import "MPZJBasePopupView.h"
+#import "MPZJPopupView.h"
 
 #endif /* ZJPopupViewMacros_h */

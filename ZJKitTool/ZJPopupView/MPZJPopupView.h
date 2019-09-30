@@ -1,5 +1,5 @@
 //
-//  ZJPopupView.h
+//  MPZJPopupView.h
 //  ZJKitTool
 //
 //  Created by James on 2018/11/13.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZJBasePopupView.h"
+#import "MPZJBasePopupView.h"
 #import <Masonry/Masonry.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -33,12 +33,12 @@ typedef enum : NSUInteger {
 
 @end
 
-@interface ZJPopupView : UIView
+@interface MPZJPopupView : UIView
 
 /// 代理
 @property (nonatomic, weak) id<ZJPopupViewDelegate>  delegate;
 /** 弹出视图 */
-@property (nonatomic, strong) ZJBasePopupView *popupView;
+@property (nonatomic, strong) MPZJBasePopupView *popupView;
 /** 弹出视图的宽度 */
 @property (nonatomic, assign) CGSize popupViewFrame;
 /** 动画时间  默认 0.25 */
@@ -55,7 +55,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong) UIButton *closeBtn;
 
 
-+(instancetype)zj_showWithPopupView:(ZJBasePopupView *)popupView;
++(instancetype)zj_showWithPopupView:(MPZJBasePopupView *)popupView;
 
 
 
@@ -71,7 +71,7 @@ typedef enum : NSUInteger {
  @param animaStyle 动画类型
  @return ZJPopUpView
  */
-+(instancetype)zj_showPopView:(ZJBasePopupView *)showView
++(instancetype)zj_showPopView:(MPZJBasePopupView *)showView
                      viewSize:(CGSize)size
                      delegate:(id<ZJPopupViewDelegate>)delegate
                  durationTime:(double)durationTime
@@ -93,7 +93,7 @@ typedef enum : NSUInteger {
  @param closeBtn 关闭按钮
  @return ZJPopUpView
  */
-+(instancetype)zj_showPopView:(ZJBasePopupView *)showView
++(instancetype)zj_showPopView:(MPZJBasePopupView *)showView
                     superView:(UIView *)superView
                      viewSize:(CGSize)size
                      delegate:(id<ZJPopupViewDelegate>)delegate
@@ -119,7 +119,7 @@ typedef enum : NSUInteger {
  @param closeBtn 关闭按钮
  @return ZJPopUpView
  */
--(instancetype)initWithShowView:(ZJBasePopupView *)showView
+-(instancetype)initWithShowView:(MPZJBasePopupView *)showView
                       superView:(UIView *)superView
                        viewSize:(CGSize)size
                        delegate:(id<ZJPopupViewDelegate>)delegate

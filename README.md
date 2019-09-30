@@ -1,41 +1,30 @@
 # ZJKitTool
 
-[![Version](https://img.shields.io/cocoapods/v/ZJKitTool.svg?style=flat)](https://cocoapods.org/pods/ZJKitTool)
-[![License](https://img.shields.io/cocoapods/l/ZJKitTool.svg?style=flat)](https://cocoapods.org/pods/ZJKitTool)
-[![Platform](https://img.shields.io/cocoapods/p/ZJKitTool.svg?style=flat)](https://cocoapods.org/pods/ZJKitTool)
-
 ## Statement
 
-ZJKitTool 开发快速添加UIKit控件,结合Masonry，以及其他工具类的简单使用,底层的封装.
+MPKitTool 开发快速添加UIKit控件,结合Masonry，以及其他工具类的简单使用,底层的封装.
 
-### iOS开发学习交流群
 
-**群号:616477537**
 
-> 加群请备注 iOS学习交流
-
-![iOS学习交流群](http://image.coderdeng.xyz/iOS_study_chat.jpg/style03)
 
 ### Contact
-Author: James
-Email: 646724452@qq.com
-QQ: 646724452
-WeChat: 18819206239
+Author: Mp
+Email: mp11@live.com
 
 ## Installation
 
-ZJKitTool is available through [CocoaPods](https://cocoapods.org). To install
+MPKitTool is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ZJKitTool'
+pod 'MPKitTool'
 ```
 
 
 > 导入头文件
 
 ```Objc
-#import <ZJKitTool.h>
+#import <MPKitTool.h>
 ```
 
 ## Usage
@@ -46,7 +35,7 @@ MVVM模式设计的图文混排评论列表，简单可随意更改的筛选视�
 > 快速创建一个按钮,赋给实例的按钮,并实现点击事件：
 
 ```Objc
-  self.btn = [UIButton  zj_buttonWithTitle:@"评论列表"
+  self.btn = [UIButton  mp_buttonWithTitle:@"评论列表"
                                   titleColor:kWhiteColor
                                    backColor:kOrangeColor
                                     fontSize:16 isBold:YES
